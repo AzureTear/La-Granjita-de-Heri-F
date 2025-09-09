@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Granjita de Heri</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/style-blogs.css">
+    <link rel="stylesheet" href="assets/css/style-navbar.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <!-----NavBar----->
+    <div class="navbar-fixed" >
+        <nav>
+            <div class="nav-wrapper green">
+                <img class="circle responsive-img circle-nav" src="assets/img/here2.webp">
+                <span class="nav-title truncate">La Granjita de Heri</span>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Productos.html">Productos</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
+                    <li><a href="Blogs.html">Blog</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="sass.html"><i class="material-icons">shopping_cart</i> </a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-----Sidenav----->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Productos.html">Productos</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
+        <li><a href="Blogs.html">Blog</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+        <li><a href="sass.html"><i class="material-icons">shopping_cart</i> </a></li>
+    </ul>
+
+    <h2>Informacion sobre nuestros animales</h2>
+
+    <div class="row">
+        <div class="col s12 m6">
+            <div class="card_cerdo">
+                <div class="card_cerdo">
+                    <img src="assets/img/Cerdo.webp" id = "img_cerdo">
+                    <span class="card-title">Cerdo</span>
+                    <a href="https://www.youtube.com/watch?v=jHT3-c3Enl8"><button onclick="cerdo">MIRA LO FELIZ QUE SOMOS LOS CERDITOS EN LA GRANJA</button></a>
+                </div>
+                <div class="card-content">
+                <li><a href="blog_1.html">Dato curioso</a></li>
+                </div>
+            </div>
+        </div>
+    </div> <!--remove?-->
+
+    <div class="row"><!--remove?-->
+        <div class="col s12 m6">
+            <div class="card_vaca">
+                <div class="card_vaca">
+                    <img src="assets/img/Vaca.webp" id = "img_vaca">
+                    <span class="card-title">Vaca</span>
+                    <a href="https://www.youtube.com/watch?v=WBABun0d7zs"><button onclick="vaca">MIRA LO FELIZ QUE SOMOS LOS VAQUITAS EN LA GRANJA</button></a>
+                </div>
+                <div class="card-content">
+                    <li><a href="blog_2.html">Dato curioso</a></li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-----Footer----->
+    <footer class="page-footer green">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">La Granjita de Heri</h5>
+                    <i class="material-icons">credit_card</i>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <p class="white-text">Ingresa tu mail para recibir noticias sobre nuestros productos.</p>
+                    <ul>
+                    <li> <input type="text" id="text-box" autocomplete="off"> </li>
+                    <button onclick="guardar()">Suscribirse</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>

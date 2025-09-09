@@ -1,0 +1,38 @@
+.nav-wrapper {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+span.nav-title {
+    padding: 0  ;
+    color: #e8f5e9;
+}
+.card-image{
+    width: 350px;
+}
+
+.circle-nav{
+    width: 50px;
+    padding-bottom: 10px;
+}
+#text-box{
+    background-color: white;
+}
+a{
+    color: green;
+}
+a:hover{
+    color: blue;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-image: url('/assets/img/Fondo.webp');
+    background-size: cover;
+    background-position: center; 
+}
+
+main {
+    flex: 1 0 auto;
+}

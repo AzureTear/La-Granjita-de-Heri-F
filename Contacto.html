@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/style-navbar.css">
+    <link rel="stylesheet" href="assets/css/style-Contacto.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<!-----NavBar----->
+    <div class="navbar-fixed" >
+        <nav>
+            <div class="nav-wrapper green">
+                <img class="circle responsive-img circle-nav" src="assets/img/here2.webp">
+                <span class="nav-title truncate">La Granjita de Heri</span>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="Index.html">Home</a></li>  
+                    <li><a href="Productos.html">Productos</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
+                    <li><a href="Blogs.html">Blog</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="sass.html"><i class="material-icons">shopping_cart</i> </a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+<!-----Sidenav----->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="Index.html">Home</a></li>  
+        <li><a href="Productos.html">Productos</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
+        <li><a href="Blogs.html">Blog</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+        <li><a href="sass.html"><i class="material-icons">shopping_cart</i> </a></li>
+    </ul>
+
+<!-----Imagen y empresa----->
+    <img src="assets/img/here2.webp" id="Imagen-Princ">
+    <h5 id="Empresa">La Granja de Heri</h5>
+
+<!-----Formulario----->
+    <div class="medium-card">
+        <div class="col s12 m6" id="formulario">
+            <div class="card grey lighten-1">
+                <div class="card-content white-text">
+                    <span class="card-title center black-text">Formulario de Contatos</span>
+                    <p>NOMBRE COMPLETO</p>
+                    <li> <input type="text" id="text-box" autocomplete="off"> </li>
+                    <p>CORREO</p>
+                    <li> <input type="text" id="text-box" autocomplete="off"> </li>
+                    <p>CONTENIDO</p>
+                    <li> <input type="text" id="text-box" autocomplete="off"> </li>
+                </div>
+                <div class="card-action">
+                    <a class="waves-effect waves-light btn green" href="Productos.html">Enviar Mensajes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-----Footer----->
+    <footer class="page-footer green">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">La Granjita de Heri</h5>
+                    <i class="material-icons">credit_card</i>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <p class="white-text">Ingresa tu mail para recibir noticias sobre nuestros productos.</p>
+                    <ul>
+                    <li> <input type="text" id="text-box" autocomplete="off"> </li>
+                    <button onclick="guardar()">Suscribirse</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/style-navbar.css">
+    <link rel="stylesheet" href="assets/css/style-Nosotros.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<!-----NavBar----->
+    <div class="navbar-fixed" >
+        <nav>
+            <div class="nav-wrapper green">
+                <img class="circle responsive-img circle-nav" src="assets/img/here2.webp">
+                <span class="nav-title truncate">La Granjita de Heri</span>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="Index.html">Home</a></li>  
+                    <li><a href="Productos.html">Productos</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
+                    <li><a href="Blogs.html">Blog</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="sass.html"><i class="material-icons">shopping_cart</i> </a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+<!-----Sidenav----->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="Index.html">Home</a></li>  
+        <li><a href="Productos.html">Productos</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
+        <li><a href="Blogs.html">Blog</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+        <li><a href="sass.html"><i class="material-icons">shopping_cart</i> </a></li>
+    </ul>
+    
+<!-------Sobre la empresa--------->
+    <div class="container">
+        <h2>Nostros</h2>
+        <p>La Granjita de Heri es una empresa dedicada a la crianza responsable y comercialización de animales de granja, así como a la venta de productos relacionados con su cuidado. Con sede en las afueras de una zona rural y una sólida presencia en línea a través de su página web oficial, la empresa ofrece una experiencia completa para amantes de los animales, granjeros y familias que buscan incorporar un nuevo animal y mejorar la calidad de uno ya existente.</p>
+    </div>
+<!-----Sobre el equipo----->
+    <div class="container">
+        <h2>Nuestro equipo</h2>
+    </div>
+    <div class="row fund">
+        <div class="col s12 m3 center-on-small-only">
+            <div class="image-container center">
+                <img class="circle responsive-img" src="assets/img/Fundador1.webp">
+            </div>
+        </div>
+        <div class="col s12 m9">
+            <h4>Heri Nilo</h4>
+            <p4>Heri Nilo es un estudiante de programación el cual realizó las páginas de blogs! </p4>
+            
+        </div>
+    </div>
+    <div class="row fund">
+        <div class="col s12 m3 center-on-small-only">
+            <div class="image-container center">
+                <img class="circle responsive-img" src="assets/img/Fundador2.webp">
+            </div>
+        </div>
+        <div class="col s12 m9">
+            <h4>Bastiano Maiolatesi</h4>
+            <p4>Bastiano Maiolatesi es un estudiante de programación el cual realizó las páginas de Home, Sobre Nosotros y Contacto!</p4>
+            
+        </div>
+    </div>
+    <div class="row fund">
+        <div class="col s12 m3 center-on-small-only">
+            <div class="image-container center">
+                <img class="circle responsive-img" src="assets/img/Fundador3.webp">
+            </div>
+        </div>
+        <div class="col s12 m9">
+            <h4>Benjamin Madrid</h4>
+            <p4>Benjamin Madrid es un estudiante de programación el cual realizó las páginas de Inicio y registro de usuario!</p4>
+            
+        </div>
+    </div>
+<!-----Footer----->
+    <footer class="page-footer green">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">La Granjita de Heri</h5>
+                    <i class="material-icons">credit_card</i>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <p class="white-text">Ingresa tu mail para recibir noticias sobre nuestros productos.</p>
+                    <ul>
+                    <li> <input type="text" id="text-box" autocomplete="off"> </li>
+                    <button onclick="guardar()">Suscribirse</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>

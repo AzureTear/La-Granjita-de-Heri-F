@@ -1,0 +1,41 @@
+
+.card-unique{
+    width: 1850px;
+    padding: 15px ;
+    background-color: #e0e0e0;
+}
+/*El @media se ocupa para que sea responsivo al cambiar a mobile. No se realiza automaticamente debido que en card unique le dimos un width determinado*/
+@media only screen
+and (max-width : 480px) {
+.card { width:100px;}
+}
+@media only screen
+and (max-width : 767px) {
+.card { width:400px;}
+}
+.card{
+    background-color: #e0e0e0;
+}
+
+#cow{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 276px;
+    height: 184px;
+    padding-top: 10px;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.img{
+    height: 180px;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Granjita de Heri</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/style-blogs_2.css">
+    <link rel="stylesheet" href="assets/css/style-navbar.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<!-----NavBar----->
+    <div class="navbar-fixed" >
+        <nav>
+            <div class="nav-wrapper green">
+                <img class="circle responsive-img circle-nav" src="assets/img/here2.webp">
+                <span class="nav-title truncate">La Granjita de Heri</span>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Productos.html">Productos</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
+                    <li><a href="Blogs.html">Blog</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="sass.html"><i class="material-icons">shopping_cart</i> </a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+<!-----Sidenav----->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Productos.html">Productos</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
+        <li><a href="Blogs.html">Blog</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+        <li><a href="sass.html"><i class="material-icons">shopping_cart</i> </a></li>
+    </ul>
+
+
+    <div class="row">
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card_vaca_1 center">
+                    <img src="assets/img/Vaca_1.webp" class = "img_vaca" >
+                    <a href="https://youtu.be/Tp6ODXvzdI8"><button onclick="cerdo">Por aqui algunos datos curioso de las vaquitas</button></a>
+                    </div>
+                <div class="card-content">
+                    <p>Cuando las vacas están junto a una compañera con la que tienen un vínculo fuerte, su frecuencia cardíaca disminuye.
+                    También muestran menos signos de estrés en comparación con cuando están solas o con una vaca desconocida.
+                    Pueden mostrar preferencias sociales claras, eligiendo pasar tiempo con ciertas vacas más que con otras.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card_vaca_1 center" >
+                    <img src="assets/img/Vaca_2.webp" class = "img_vaca" >
+                    <a href="https://youtu.be/Tp6ODXvzdI8"><button onclick="cerdo">Por aqui algunos datos curioso de las vaquitas</button></a>
+                </div>
+                <div class="card-content">
+                    <p> Las vacas responden positivamente a la música suave, 
+                        como la clásica o el jazz. 
+                        En muchas granjas se usa música para relajarlas y mejorar su producción de leche. 
+                        Pero si la música es ruidosa o estridente, se estresan.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card_vaca_1 center">
+                    <img src="assets/img/Vaca_3.webp" class = "img_vaca">
+                    <a href="https://youtu.be/Tp6ODXvzdI8"><button onclick="cerdo">Por aqui algunos datos curioso de las vaquitas</button></a>
+                </div>
+                <div class="card-content">
+                    <p> TIENEN SENTIDO DE LA JUSTICIAS
+                        Estudios muestran que las vacas se frustran cuando son tratadas injustamente o 
+                        cuando ven que otras vacas reciben recompensas y ellas no, a pesar de hacer lo mismo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-----Footer----->
+    <footer class="page-footer green">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">La Granjita de Heri</h5>
+                    <i class="material-icons">credit_card</i>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <p class="white-text">Ingresa tu mail para recibir noticias sobre nuestros productos.</p>
+                    <ul>
+                    <li> <input type="text" id="text-box" autocomplete="off"> </li>
+                    <button onclick="guardar()">Suscribirse</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>

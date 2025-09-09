@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/style-navbar.css">
+    <link rel="stylesheet" href="assets/css/style-Detalle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<!-----NavBar----->
+    <div class="navbar-fixed" >
+        <nav>
+            <div class="nav-wrapper green">
+                <img class="circle responsive-img circle-nav" src="assets/img/here2.webp">
+                <span class="nav-title truncate">La Granjita de Heri</span>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="Index.html">Home</a></li>  
+                    <li><a href="Productos.html">Productos</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
+                    <li><a href="Blogs.html">Blog</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="sass.html"><i class="material-icons">shopping_cart</i> </a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+<!-----Sidenav----->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="Index.html">Home</a></li>  
+        <li><a href="Productos.html">Productos</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
+        <li><a href="Blogs.html">Blog</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+        <li><a href="sass.html"><i class="material-icons">shopping_cart</i> </a></li>
+    </ul>
+<!--Main Card-->
+    <div class="row" >
+        <div class="col s6 " >
+            <div class="card horizontal card-unique " >
+                <div class="card-image">
+                    <img src="assets/img/cerdo-ham.webp" >
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <h4>Cerdo Hampshire                $170.500</h4>
+                        <p>
+                            El cerdo Hampshire es una raza porcina originaria de Estados Unidos, 
+                            fácilmente reconocible por su pelaje negro con una franja blanca que cubre los hombros y las patas delanteras.
+                             Es muy apreciado por su carne magra de alta calidad, su rápido crecimiento y buen rendimiento en canal. 
+                             Además, destaca por su resistencia, fertilidad y buen temperamento, lo que lo hace ideal para la producción comercial.
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a class="waves-effect waves-light btn green" href="Productos.html">Añadir al carro</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h4>Productos Relacionados</h4>
+<!-----Tambien te puede Interesar-->
+    <div class="row" >
+        <div class="col s12 m3" >
+            <div class="card" >
+                <div class="card-image" id="cow">
+                    <img src="assets/img/cerdo-berk.webp">
+                </div>
+                <a href="https://music.youtube.com" ><h6 class="center-align" >cerdo berkshire</h6></a>
+                <div class="card-content">
+                    <h6>$180.000</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m3">
+            <div class="card">
+                <div class="card-image" id="cow">
+                    <img src="assets/img/heno.webp">
+                </div>
+                <a href="https://music.youtube.com" ><h6 class="center-align" >heno de alfalfa</h6></a>
+                <div class="card-content">
+                    <h6>$3.890 (1kg)</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m3">
+            <div class="card">
+                <div class="card-image" id="cow">
+                    <img src="assets/img/avena.webp">
+                </div>
+                <a href="https://music.youtube.com" ><h6 class="center-align" >heno de avena</h6></a>
+                <div class="card-content">
+                    <h6> $4.200 (1kg)</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m3">
+            <div class="card">
+                <div class="card-image" id="cow">
+                    <img src="assets/img/calcio.webp" >
+                </div>
+                <a href="https://music.youtube.com" ><h6 class="center-align" >calcio</h6></a>
+                <div class="card-content">
+                    <h6>$5.990 (5kg)</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-----Footer----->
+    <footer class="page-footer green">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">La Granjita de Heri</h5>
+                    <i class="material-icons">credit_card</i>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <p class="white-text">Ingresa tu mail para recibir noticias sobre nuestros productos.</p>
+                    <ul>
+                    <li> <input type="text" id="text-box" autocomplete="off"> </li>
+                    <button onclick="guardar()">Suscribirse</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>

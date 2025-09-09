@@ -1,0 +1,19 @@
+#img_cerdo{
+    width: 926px;
+}
+
+#img_vaca{
+    width: 926px;
+}
+
+a{
+    color: blue;
+}
+
+.card_cerdo{
+    background-color: slategrey;
+}
+
+.card_vaca{
+    background-color: slategrey;
+}

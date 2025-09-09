@@ -1,0 +1,27 @@
+.img_cerdo{
+    width: 435px;
+    padding: 5px;
+}
+
+p{
+    color: black;
+}
+
+button{
+    color: blue;
+    background-color: black;
+}
+
+.card{
+    background-color: slategrey;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
